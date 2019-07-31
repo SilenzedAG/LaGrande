@@ -1,0 +1,204 @@
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+.slideshow-container > img {
+  height: 100%;
+}
+/* Fading animation */
+.fades {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next {font-size: 11px}
+}
+.mclaren720s {
+  text-align: center;
+}
+.mclaren720s > p > #mclaren720sheader {
+  font-size: 50px;
+}
+.mclaren720s > p > #header-desc {
+  font-size: 25px;
+}
+.mclaren720s > button {
+  font-size: 25px;
+  padding-left: 10px; 
+  padding-right: 10px;
+  margin-left: 20px; 
+  margin-right: 20px;
+}
+.mclaren720s > button:focus {
+  outline:0;
+}
+.mclaren720s > #powerButton {
+  background:none;
+}
+.activebutton {
+  background: rgb(255, 94, 0);
+  border: 2px solid rgb(255, 94, 0);
+}
+.mclaren720s > #myDIV2 {
+  display:none;
+}
+.mclaren720s > #myDIV > img {
+  width: 65%;
+  float:left;
+}
+.mclaren720s > #myDIV2 > img {
+  width: 65%;
+  float:left;
+}
+.specTables {
+  padding-left: 100px;
+}
+.specTables > table > thead {
+  font-size: 40px;
+  color: rgb(255, 127, 52);
+}
+.specTables > table {
+  font-size: 15px;
+}
+
+.specImage img {
+  width: 50%;
+  position: absolute;
+  right: 5%;
+  top: 200%;
+  border-radius:8%;
+}
+.overallVid {
+  text-align:center;
+}
+#carParts:hover {
+  cursor: pointer;
+}
+.pulsate {
+  animation: pulsate2 3s ease-out;
+  animation-iteration-count: infinite;
+  opacity: 0
+}
+@keyframes pulsate2 {
+  0% { 
+      opacity: .5;
+  }
+  50% { 
+      opacity: 1.0;
+  }
+  100% { 
+      opacity: .5;
+  }
+}
+.alert {
+  padding: 20px;
+  background-color: #5c5c5c;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  margin-bottom: 15px;
+  max-width:300px;
+  display:none;
+  opacity:0.8;
+}
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 30px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+  font-size:50px;
+}
+#wheel {
+  position: absolute;
+  top:295%;
+  left:55%;
+}
+#fuel {
+  position: absolute;
+  top:270%;
+  right:3%;
+}
+#engine {
+  position: absolute;
+  top:280%;
+  left:24%;
+}
+#door {
+  position: absolute;
+  top:275%;
+  left:57%;
+}
+@media only screen and (max-width: 1800px) {
+  .specImage {display: none;}
+  .viewParts {display: none;}
+}
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: rgb(106, 255, 93);
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+#dot1 {
+  position: absolute;
+  top:305%;
+  left:52%;
+}
+#dot2 {
+  position: absolute;
+  top:280%;
+  right:20%;
+}
+#dot3 {
+  position: absolute;
+  top:290%;
+  left:30%;
+}
+#dot4 {
+  position: absolute;
+  top:285%;
+  left:64%; 
+}
+.fades2 {
+  -webkit-animation-name: fade2;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade2;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade2 {
+  from {opacity: .4} 
+  to {opacity: .8}
+}
+
+@keyframes fade2 {
+  from {opacity: .4} 
+  to {opacity: .8}
+}

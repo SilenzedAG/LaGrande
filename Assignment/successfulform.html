@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>LaGrande Automative - Appointments</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+
+  <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+
+  <!-- Place your favicon.ico and apple-touch-icon.png in the template root directory -->
+  <link href="favicon.ico" rel="shortcut icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate-css/animate.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/successfulform.css" rel="stylesheet">
+  <link rel="icon" type="image/gif" href="Images/logo.png" />
+</head>
+
+<body>
+
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <a href="loadingscreens/homeloader.html"><img src="Images/lagrandelogo.png" alt="" title="" /></img></a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="loadingscreens/homeloader.html">Home</a></li>
+          <li><a href="appointments.html">Appointments</a></li>
+          <li><a href="loadingscreens/catalogueloader.html">Models</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="store.html">Store</a></li>
+        </ul>
+      </nav>
+      <!-- #nav-menu-container -->
+    </div>
+  </header>
+  <br><br>
+  <div class="firstMessage">
+    <h1>Thank you <span id="storedName"></span>. Your appointment for a <span id="storedCar"></span> <span
+        id="storedPurpose"></span> on <span id="storedDate"></span>
+      has been successfully booked. We look forward to seeing you. </h1>
+    <br>
+    <h3 class="pulsate">A confirmation message has been sent to the email <span id="storedEmail"></span> and the phone
+      number <span id="storedNumber"></span>.</h3>
+    <img src="Images/mclaren720sslide1.jpg">
+    <p>Click<a href="loadingscreens/homeloader.html">here</a>to return to the home page.</p>
+  </div>
+
+  <!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- Required JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/morphext/morphext.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/stickyjs/sticky.js"></script>
+  <script src="lib/easing/easing.js"></script>
+
+  <!-- Template Specisifc Custom Javascript File -->
+  <script src="js/custom.js"></script>
+  <script src="js/appointments.js"></script>
+  <script>
+    var storedName = localStorage.getItem("nameField");
+    document.getElementById("storedName").innerHTML = storedName;
+    var storedCar = localStorage.getItem("selectedcar");
+    document.getElementById("storedCar").innerHTML = storedCar;
+    var storedPurpose = localStorage.getItem("purposeselected");
+    document.getElementById("storedPurpose").innerHTML = storedPurpose;
+    var storedDate = localStorage.getItem("dateField");
+    document.getElementById("storedDate").innerHTML = storedDate;
+    var storedEmail = localStorage.getItem("emailField");
+    document.getElementById("storedEmail").innerHTML = storedEmail;
+    var storedNumber = localStorage.getItem("numberField");
+    document.getElementById("storedNumber").innerHTML = storedNumber;
+  </script>
+</body>
+
+</html>

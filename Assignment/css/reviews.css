@@ -1,0 +1,82 @@
+body {
+    position: relative;
+    color:white;
+}
+h2 {
+    color: white;
+    position: relative;
+    left: 3%;
+}
+#myUL > li {
+    padding: 40px;
+    margin: 20px;
+    border: 1px solid white;
+    max-width: 1700px;
+    list-style-type: none;
+}
+#searchCars {
+    position: relative;
+    left: 3%;
+}
+#searchCars > input {
+    background: none;
+    border: none;
+    color:white;
+}
+a:hover {
+    color: white;
+}
+#userName {
+    color:rgb(255, 94, 0);
+}
+#stars {
+    font-size: 25px;
+}
+form {
+    position: relative;
+    left: 3%;
+}
+#carselected {
+    background: none;
+    border: none;
+    font-size: 30px;
+}
+
+#nameField {
+    background: none;
+    border: none;
+    font-size: 20px;
+}
+#submitReview {
+    background:none;
+    color:white;
+}
+#noOfStars {
+    background:none;
+    color:white;
+    border:none;
+}
+#rating {
+    font-size: 40px;
+}
+#rating > span {
+    margin-left: 10px;
+}
+#rating > span:hover {
+    color:rgb(238, 119, 50);
+    cursor: pointer;
+}
+button {
+    background:none;
+    font-size: 18px;
+    padding: 8px;
+}
+button:hover {
+    color: rgb(238, 119, 50)
+}
+#editButton {
+    position: absolute;
+    right:10%;
+    top:75.5%;
+    display:none;
+}

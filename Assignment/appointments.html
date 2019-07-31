@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>LaGrande Automative - Appointments</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+
+  <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+
+  <!-- Place your favicon.ico and apple-touch-icon.png in the template root directory -->
+  <link href="favicon.ico" rel="shortcut icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate-css/animate.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/appointments.css" rel="stylesheet">
+  <link rel="icon" type="image/gif" href="Images/logo.png" />
+
+</head>
+
+<body>
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <a href="loadingscreens/homeloader.html"><img src="Images/lagrandelogo.png" alt="" title="" /></img></a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="loadingscreens/homeloader.html">Home</a></li>
+          <li class="menu-active"><a href="">Appointments</a></li>
+          <li><a href="loadingscreens/catalogueloader.html">Models</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="store.html">Store</a></li>
+        </ul>
+      </nav>
+      <!-- #nav-menu-container -->
+    </div>
+  </header>
+  <div class="alert">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+    <p><span id="errorMessage"></span></p>
+  </div>  
+  <div class="maincontent">
+    <br><br>
+    <div class="appointmentscontent">
+      <div class="calendarContainer" align="center">
+        <p><span id="interface" class="pulsate">Click<a href="apptinterface.html"> HERE </a>to go to the appointment
+            management interface.</span></p>
+        <h1>Book an appointment</h1>
+        <p><span class="pulsate">Start by choosing a date...</span></p>
+        <div class="calendar">
+          <div class="month">
+            <ul>
+              <li></li>
+              <li></li>
+              <li>
+                August<br>
+                <span style="font-size:18px">2019</span>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="weekdays">
+            <li>MON</li>
+            <li>TUE</li>
+            <li>WED</li>
+            <li>THU</li>
+            <li>FRI</li>
+            <li>SAT</li>
+            <li>SUN</li>
+          </ul>
+
+          <ul id="days">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li><span class="days" onClick="updateto1()">1</span></li> 
+            <li><span class="days" onClick="updateto2()">2</span></li>
+            <li><span class="days" onClick="updateto3()">3</span></li>
+            <li><span class="days" onClick="updateto4()">4</span></li>
+            <li><span class="days" onClick="updateto5()">5</span></li>
+            <li><span class="days" onClick="updateto6()">6</span></li>
+            <li><span class="days" onClick="updateto7()">7</span></li>
+            <li><span class="days" onClick="updateto8()">8</span></li>
+            <li><span class="days" onClick="updateto9()">9</span></li>
+            <li><span class="days" onClick="updateto10()">10</span></li>
+            <li><span class="days" onClick="updateto11()">11</span></li>
+            <li><span class="days" onClick="updateto12()">12</span></li>
+            <li><span class="days" onClick="updateto13()">13</span></li>
+            <li><span class="days" onClick="updateto14()">14</span></li>
+            <li><span class="days" onClick="updateto15()">15</span></li>
+            <li><span class="days" onClick="updateto16()">16</span></li>
+            <li><span class="days" onClick="updateto17()">17</span></li>
+            <li><span class="days" onClick="updateto18()">18</span></li>
+            <li><span class="days" onClick="updateto19()">19</span></li>
+            <li><span class="days" onClick="updateto20()">20</span></li>
+            <li><span class="days" onClick="updateto21()">21</span></li>
+            <li><span class="days" onClick="updateto22()">22</span></li>
+            <li><span class="days" onClick="updateto23()">23</span></li>
+            <li><span class="days" onClick="updateto24()">24</span></li>
+            <li><span class="days" onClick="updateto25()">25</span></li>
+            <li><span class="days" onClick="updateto26()">26</span></li>
+            <li><span class="days" onClick="updateto27()">27</span></li>
+            <li><span class="days" onClick="updateto28()">28</span></li>
+            <li><span class="days" onClick="updateto29()">29</span></li>
+            <li><span class="days" onClick="updateto30()">30</span></li>
+            <li><span class="days" onClick="updateto31()">31</span></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+      <br><br>
+      <form action="loadingscreens/formloader.html" autocomplete="off" id="formId">
+        <div class="dateAndPurpose" align="center">
+          <table border="0">
+            <tr>
+              <td class="inputTitle"><label for="dateField">Date Selected:</label></td>
+              <td><input type="text" name="date" id="dateField" required disabled size="50"
+                  placeholder="Thursday, 1 August 2019" title="FORMAT: Day, (DD) Month Year //OR// Click the calendar!">
+              </td>
+            </tr>
+            <tr>
+              <td><br></td>
+              <td><br></td>
+            </tr>
+            <tr>
+              <td class="inputTitle">Purpose of Appointment:&nbsp;&nbsp;&nbsp;</td>
+              <td class="radioStyle">
+                <input type="radio" name="purpose" value="buycar" id="buycar" onClick="updatetobuycar()" checked
+                  required>&nbsp;&nbsp;
+                <label for="buycar">Car Purchase</label>
+                &nbsp;&nbsp;&nbsp;
+                <input type="radio" name="purpose" value="enquirecar" id="enquirecar" onClick="updatetoenquire()"
+                  required>&nbsp;&nbsp;
+                <label for="enquirecar">Car Enquiry</label>
+              </td>
+            </tr>
+            <tr>
+              <td><br></td>
+              <td><br></td>
+            </tr>
+            <tr>
+              <td class="inputTitle">Select a Car:&nbsp;&nbsp;&nbsp;</td>
+              <td class="radioStyle">
+                <input type="radio" name="selectcar" value="mclaren720s" id="mclaren720s" onClick="updateto720s()"
+                  checked required>&nbsp;&nbsp;
+                <label for="mclaren720s">McLaren 720S</label>
+                &nbsp;&nbsp;&nbsp;
+                <input type="radio" name="selectcar" value="mclarenp1" id="mclarenp1" onClick="updatetop1()"
+                  required>&nbsp;&nbsp;
+                <label for="mclarenp1">McLaren P1</label>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <br><br>
+        <hr>
+        <div class="selectcar" align="center">
+          <input type="text" name="carselected" id="carselected" value="McLaren 720S" readonly required size="12">
+          <input type="text" name="purposeselected" id="purposeselected" value="(Car Purchase)" readonly required
+            size="12">
+          <p><span class="pulsate">Suit your preferences. Choose a color.</span></p>
+          <input type="text" id="colorField" value="BLACK" class="pulsate" disabled readonly required size="8">
+        </div>
+        <div class="colorField" align="center">
+
+        </div>
+        <div class="chooseColor" align="center">
+          <br><br>
+          <table border="0">
+            <tr>
+              <td><img src="Images/mclaren720sblack.png" id="theimage" class="pulsate"></td>
+              <td><input type="radio" name="choosecolor" id="black" value="black" class="uselessbtn" required checked
+                  onClick="changeImage('Images/mclaren720sblack.png')"></td>
+              <td><input type="radio" name="choosecolor" id="white" value="white" class="uselessbtn" required
+                  onClick="changeImage('Images/mclaren720swhite.png')"></td>
+              <td><input type="radio" name="choosecolor" id="orange" value="orange" class="uselessbtn" required
+                  onClick="changeImage('Images/mclaren720sorange.png')"></td>
+              <td><input type="radio" name="choosecolor" id="blue" value="blue" class="uselessbtn" required
+                  onClick="changeImage('Images/mclaren720sblue.png')"></td>
+              <td><label for="black" class="colorLabel" onClick="updatetoBlack()"></label></td>
+              <td><label for="white" class="colorLabel" onClick="updatetoWhite()"></label></td>
+              <td><label for="orange" class="colorLabel" onClick="updatetoOrange()"></label></td>
+              <td><label for="blue" class="colorLabel" onClick="updatetoBlue()"></label></td>
+            </tr>
+          </table>
+        </div>
+    </div>
+    <br><br>
+    <hr><br><br>
+    <div class="particulars">
+      <h1>Particulars</h1>
+      <p><span class="pulsate">Fill in a few particulars.</span></p>
+      <table border="0" align="center">
+        <tr>
+          <td class="inputTitle"><label for="nameField">Name:</label></td>
+          <td><input type="text" name="name" id="nameField" required placeholder="eg. Bruce McLaren"></td>
+        </tr>
+        <tr>
+          <td><br></td>
+          <td><br></td>
+        </tr>
+        <tr>
+          <td class="inputTitle"><label for="emailField">Email:</label></td>
+          <td><input type="email" name="email" id="emailField" required placeholder="eg. mclaren@email.com"></td>
+        </tr>
+        <tr>
+          <td><br></td>
+          <td><br></td>
+        </tr>
+        <tr>
+          <td class="inputTitle"><label for="numberField">Contact No:</label></td>
+          <td><input type="tel" name="number" id="numberField" pattern="[8-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]"
+              required maxlength="8" placeholder="eg. 91234567"></td>
+        </tr>
+        <tr>
+          <td><br></td>
+          <td><br></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <hr>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2>Mailing Address (optional)</h2>
+          </td>
+        </tr>
+        <tr>
+          <td class="inputTitle"><label for="addressField">House Address:</label></td>
+          <td><input type="text" name="streetaddress" id="addressField"></td>
+        </tr>
+        <tr>
+          <td><br></td>
+          <td><br></td>
+        </tr>
+        <tr>
+          <td class="inputTitle"><label for="postalField">Postal Code:</label></td>
+          <td><input type="tel" name="number" id="postalField" pattern="[8-9][0-9][0-9][0-9][0-9][0-9]" maxlength="6"
+              placeholder="eg. 123456"></td>
+        </tr>
+      </table>
+    </div>
+
+    <br><br>
+    <div class="submitreset" align="center">
+      <button type="submit" name="submit" value="Submit" onClick="submitFormData()">SUBMIT</button>
+      <button type="reset" value="Reset" onClick="window.open('appointments.html', '_self')">RESET</button>
+    </div>
+  </div>
+  </form>
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- Required JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/morphext/morphext.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/stickyjs/sticky.js"></script>
+  <script src="lib/easing/easing.js"></script>
+
+  <!-- Template Specisifc Custom Javascript File -->
+  <script src="js/custom.js"></script>
+  <script src="js/appointments.js"></script>
+  <script>
+    if (localStorage.getItem("nameField") === null) {
+      document.write("")
+    }
+    else {
+      var nameDisplay = localStorage.getItem("nameField");
+      var carDisplay = localStorage.getItem("selectedcar");
+      var purposeDisplay = localStorage.getItem("purposeselected");
+      var dateDisplay = localStorage.getItem("dateField");
+      var str =  "Hey " + nameDisplay + ", please be reminded that you have an appointment for a " + carDisplay + " " + purposeDisplay + " on " + dateDisplay
+      document.querySelector(".alert p #errorMessage").innerHTML= str
+      var form = document.getElementById("formId");
+      var elements = form.elements;
+      for (var i = 0, len = elements.length; i < len; ++i) {
+        elements[i].disabled = true;
+      }
+      document.getElementById("interface").style.display = "block";
+    }
+  </script>
+</body>
+
+</html>

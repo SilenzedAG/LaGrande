@@ -1,0 +1,48 @@
+.firstMessage {
+    position: relative;
+    left: 15%;
+    max-width: 1300px;
+}
+.firstMessage > h1 {
+    line-height: 1.5;
+}
+.firstMessage > h3 {
+    font-style: italic;
+}
+.firstMessage > h1 > span {
+    color: rgb(219, 121, 65);
+}
+.firstMessage > h3 {
+    color: gray;
+}
+.firstMessage > h3 > span {
+    color: rgb(219, 121, 65);
+}
+.pulsate {
+    animation: pulsate 3s ease-out;
+    animation-iteration-count: infinite;
+    opacity: 0
+}
+@keyframes pulsate {
+    0% { 
+        opacity: .5;
+    }
+    50% { 
+        opacity: 1.0;
+    }
+    100% { 
+        opacity: .5;
+    }
+}
+.firstMessage > img {
+    width: 1200px;
+}
+.firstMessage > p > a {
+    font-size: 30px;
+    padding: 10px;
+    color:rgb(255, 94, 0);
+}
+.firstMessage > p{
+    font-size: 30px;
+    padding: 10px;
+}

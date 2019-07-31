@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>LaGrande Automative - Appointments</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+
+  <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+
+  <!-- Place your favicon.ico and apple-touch-icon.png in the template root directory -->
+  <link href="favicon.ico" rel="shortcut icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate-css/animate.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/reviews.css" rel="stylesheet">
+  <link rel="icon" type="image/gif" href="Images/logo.png" />
+</head>
+
+<body>
+
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <a href="loadingscreens/homeloader.html"><img src="Images/lagrandelogo.png" alt="" title="" /></img></a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="loadingscreens/homeloader.html">Home</a></li>
+          <li><a href="appointments.html">Appointments</a></li>          
+          <li><a href="loadingscreens/catalogueloader.html">Models</a></li>
+          <li class="menu-active"><a href="reviews.html">Reviews</a></li>
+          <li><a href="store.html">Store</a></li>
+        </ul>
+      </nav>
+      <!-- #nav-menu-container -->
+    </div>
+  </header>
+  <br><br>
+  <h2>LaGrande Automative Forum</h2>
+    <ul id="myUL">
+    <li>
+        <span id="userName"><strong>Anonymous98127:</strong></span> &nbsp;LaGrande Automative is the best!<br>
+    </li>
+    <li>
+        <span id="userName"><strong>McLarenLover1209:</strong></span> &nbsp; Best McLaren Reseller out there....<br>
+    </li>
+
+    <li>
+        <span id="userName"><strong>Ariana Grande:</strong></span> &nbsp; LaGrande Automative provides the best services around<br>
+    </li>
+
+    <li>
+        <span id="userName"><strong>Jaron Tan:</strong></span> &nbsp; Best car dealership ever<br>
+    </li>
+    </ul>
+    <button type="button" id="editButton" onClick="editReview()">EDIT</button>
+    <h2 id="writeAReview">Write a Review</h2>
+    <form autocomplete="off">
+      <span id="nameTitle">Name:</span> &nbsp;&nbsp;&nbsp;<input type="text" name="name" id="nameField" required placeholder="eg. Bruce McLaren">
+      <br><br>
+      <textarea name="review" cols="200" rows="5" id="submitReview" placeholder="Write a short review..." required></textarea>  
+      <br><br>
+    <button type="submit" id="submitReviewBtn" onClick="myFunction()">Submit Review</button>   
+    </form>
+    <script>
+      function myFunction() {
+        var nameTest = document.getElementById("nameField");
+        var reviewTest = document.getElementById("submitReview");
+        localStorage.setItem("REVIEW", nameTest.value + ": " + reviewTest.value )
+        
+        document.getElementById("nameField").value="";
+        document.getElementById("submitReview").value="";
+        location.reload()
+      }
+      
+      var storedReview = localStorage.getItem("REVIEW")
+      if (storedReview!=null) {
+        var node = document.createElement("LI");
+        var textnode = document.createTextNode(storedReview);
+        node.appendChild(textnode);
+        document.getElementById("myUL").appendChild(node);
+        document.getElementById("writeAReview").innerHTML="Thanks for the review!";
+        document.getElementById("nameTitle").style.display="none";
+        document.getElementById("nameField").style.display="none";
+        document.getElementById("submitReview").style.display="none";
+        document.getElementById("submitReviewBtn").style.display="none";
+        document.getElementById("editButton").style.display="block";
+        
+      }
+      function editReview() {
+        document.getElementById("writeAReview").innerHTML="Edit Review";
+        document.getElementById("nameTitle").style.display="block";
+        document.getElementById("nameField").style.display="block";
+        document.getElementById("submitReview").style.display="block";
+        document.getElementById("submitReviewBtn").style.display="block";
+      }
+    </script>
+    
+  <!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- Required JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>    
+  <script src="lib/morphext/morphext.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/stickyjs/sticky.js"></script>
+  <script src="lib/easing/easing.js"></script>
+
+  <!-- Template Specisifc Custom Javascript File -->
+  <script src="js/custom.js"></script>
+  <script>
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>LaGrande Automative - Catalogue</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+
+  <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+
+  <!-- Place your favicon.ico and apple-touch-icon.png in the template root directory -->
+  <link href="favicon.ico" rel="shortcut icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate-css/animate.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/catalogue.css" rel="stylesheet">
+  <link rel="icon" type="image/gif" href="Images/logo.png" />
+</head>
+
+<body>
+
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <a href="loadingscreens/homeloader.html"><img src="Images/lagrandelogo.png" alt="" title="" /></img></a>
+      </div>
+      
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="loadingscreens/homeloader.html">Home</a></li>
+          <li id="appointmentsDisplay"><a href="appointments.html">Appointments</a></li>
+          <li class="menu-active"><a href="">Models</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="store.html">Store</a></li>
+          <li id="interfaceDisplay"><a href="apptinterface.html">Appointment Manager</a></li>
+        </ul>
+      </nav>
+      <!-- #nav-menu-container -->
+    </div>
+  </header>
+  <div class="alert">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+    <p><span id="errorMessage"></span></p>
+  </div>  
+  <!-- #header -->
+  <div class="slideshow-container">
+
+    <div class="mySlides fades">
+      <img src="Images/mclaren720s2.jpg" style="width:100%">
+      <div class="text2"><a href="mclaren720s.html">McLaren 720s</a></div>
+    </div>
+
+    <div class="mySlides fades">
+      <img src="Images/mclarenp1_2.jpg" style="width:100%">
+      <div class="text"><a href="mclarenp1.html">McLaren P1</a></div>
+    </div>
+
+    <div class="mySlides fades">
+      <img src="Images/mclarengt.jpg" style="width:100%">
+      <div class="text3"><a href="mclarengt.html">McLaren GT</a></div>
+    </div>
+  </div>
+
+
+  <table style="color:white;" align="center">
+    <tr>
+      <td class="p1image"><img src="Images/mclarenp1.jpg"></td>
+      <td class="p1image"><img src="Images/mclaren720s2.jpg"></td>
+    </tr>
+    <tr>
+      <td class="p1image"><img src="Images/mclarengt2.jpg"></td>
+      <td class="p1image"><img src="Images/mclaren600lt.jpg"></td>
+    </tr>
+    <tr>
+      <td class="p1image"><img src="Images/mclarensenna.jpg"></td>
+      <td class="p1image"><img src="Images/mclaren570gt.jpg"></td>
+    </tr>
+
+  </table>
+  <p class="imagetexts"><span class="imagetext" id="p1imagetext"><a href="">McLaren P1</a></span></p>
+  <p class="imagetexts"><span class="imagetext2" id="imagetext720s"><a href="mclaren720s.html">McLaren 720S</a></span>
+  </p>
+  <p class="imagetexts"><span class="imagetext" id="gtimagetext"><a href="">McLaren GT</a></span></p>
+  <p class="imagetexts"><span class="imagetext2" id="imagetext600lt"><a href="">McLaren 600LT</a></span></p>
+  <p class="imagetexts"><span class="imagetext" id="sennaimagetext"><a href="">McLaren Senna</a></span></p>
+  <p class="imagetexts"><span class="imagetext2" id="imagetext570gt"><a href="">McLaren 570GT</a></span></p>
+  
+  <!--==========================
+  Footer
+============================-->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="copyright">
+            &copy; Copyright <strong>LaGrande Automative</strong>. All Rights Reserved
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- Required JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/morphext/morphext.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/stickyjs/sticky.js"></script>
+  <script src="lib/easing/easing.js"></script>
+
+  <!-- Template Specisifc Custom Javascript File -->
+  <script src="js/custom.js"></script>
+  <script>
+    var slideIndex = 0;
+    showSlides(slideIndex);
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 3000); // Change image every 2 seconds
+    }
+    if (localStorage.getItem("nameField") === null) {
+      document.getElementsByClassName("alert").style.display="none"
+    }
+    else {
+      var nameDisplay = localStorage.getItem("nameField");
+      var carDisplay = localStorage.getItem("selectedcar");
+      var purposeDisplay = localStorage.getItem("purposeselected");
+      var dateDisplay = localStorage.getItem("dateField");
+      document.getElementsByClassName("alert").style.display="block";
+      var str =  "Hey " + nameDisplay + ", please be reminded that you have an appointment for a " + carDisplay + " " + purposeDisplay + " on " + dateDisplay
+      document.getElementById("interfaceDisplay").style.display = "block";
+      document.getElementById("appointmentsDisplay").style.display = "none";
+      document.querySelector(".alert p #errorMessage").innerHTML= str
+    }
+  </script>
+</body>
+
+</html>
